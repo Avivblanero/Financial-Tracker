@@ -2,7 +2,7 @@ import react from 'react';
 import Expenses from "./components/Expenses/Expenses";
 
 
-function App() {
+const App = () => {
   const expenses = [
     { id: 'e1', title: 'ביטוח רכב', amount: 4500, date: new Date(2021, 3, 8) },
     { id: 'e2', title: 'נייר טואלט', amount: 45, date: new Date(2021, 2, 12) },
@@ -14,7 +14,6 @@ function App() {
     <div>
       <h2>מחשבון הוצאות</h2>
       <Expenses item={expenses} />
-
     </div>
   );
 }
